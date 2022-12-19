@@ -65,7 +65,7 @@ Below commands are optional but you should use these for ignoring unwanted issue
 ``
 
 ``php artisan optimize:clear
-``
+`` 
   
 # Step-6:
  Now, your application is ready to integrate shurjoPay package. Add this line of code in your method where you want to call shurjoPay Payment Gateway. You can use any code segment of below
