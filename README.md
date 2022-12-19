@@ -205,7 +205,6 @@ i) <h2 style="color:#8934eb;"> <i>First, I am going to create a laravel project 
 
 ii) <h2 style="color:#8934eb;"> <i>Following, Step-1. Now, Going to change "ShurjopayIntegration" project's composer.json. </i></h2>
    <br>
-   <br>
    Example:-
 
    ![composer](https://user-images.githubusercontent.com/78033774/208382731-4346a47b-67b6-4e03-8801-0e040401dff7.png)
@@ -233,13 +232,11 @@ iv) <h2 style="color:#8934eb;"> <i> Following, Step-3. Adding service provider i
 
 v) <h2 style="color:#8934eb;"> <i> Following, Step-4. Configuring .env file with credentials.</i></h2>
    <br>
-   <br>
    Example:-
 
    ![env](https://user-images.githubusercontent.com/78033774/208383086-36529838-b265-4cd7-945a-8cce1f300c24.png)
    
 vi) <h2 style="color:#8934eb;"> <i> Following, Step-5. Plublishing "shrjopayConfig.php" with below command. After publishing, it will be added under config folder. </i></h2>
-   <br>
    <br>
    Example:-
 
@@ -260,13 +257,11 @@ vi) <h2 style="color:#8934eb;"> <i> Following, Step-5. Plublishing "shrjopayConf
 vii) <h2 style="color:#8934eb;"> <i> Following, Step-6. Adding "Shurjopay" controller's namespace and also "PaymentRequest" class's namespace.
    Then creating two methods [ initialPayment() & verifyPayment() ] </i></h2>
    <br>
-   <br>
    Example:-
 
    ![controller](https://user-images.githubusercontent.com/78033774/208383848-9ec869ad-473d-4805-954f-887998a6b21f.png)
 
 viii) <h2 style="color:#8934eb;"> <i> Defining Routes in web.php :- </i></h2>
-   <br>
    <br>
    Example:-
    
@@ -274,13 +269,11 @@ viii) <h2 style="color:#8934eb;"> <i> Defining Routes in web.php :- </i></h2>
 
 ix) <h2 style="color:#8934eb;"> <i> Following Step-7. Going to termial for giving below commands. </i></h2>
    <br>
-   <br>
    Example:-
    
    ![serve](https://user-images.githubusercontent.com/78033774/208384292-b6736c75-9a4a-42c0-8d08-50bc7e2f8c38.png)
 
 x)<h2 style="color:#8934eb;"> <i> Blade file looks like below :-  </i></h2>
-   <br>
    <br>
    Example:-
 
