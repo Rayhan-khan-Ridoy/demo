@@ -199,24 +199,43 @@ Now application is ready to work. Just give another command in terminal
    
    ``composer create-project laravel/laravel ShurjopayIntegration
    ``
-2. Following Step-1. Now, Going to change "ShurjopayIntegration" project's composer.json.
+   ![createProject](https://user-images.githubusercontent.com/78033774/208382663-a6eb643b-ffe8-4562-8d94-cb531e9a677f.png)
 
+2. Following Step-1. Now, Going to change "ShurjopayIntegration" project's composer.json.
+   ![composer](https://user-images.githubusercontent.com/78033774/208382731-4346a47b-67b6-4e03-8801-0e040401dff7.png)
 3. Following Step-2.
 
    ``composer update
    ``
+   ![comUpdate](https://user-images.githubusercontent.com/78033774/208382865-7eab0455-b5f5-433c-824b-ee5227eb1c41.png)
+
 4. Following Step-3. Add service provider in config/app.php into "providers" array. .
 
 ``
 Shurjomukhi\ShurjopayLaravelPlugin\ShurjopayServiceProvider::class,
 ``
-5. Following Step-4.Configuring .env file with credentials
-   .env
+![appPhp](https://user-images.githubusercontent.com/78033774/208382945-8fe45cf1-7cc0-4dc8-8af9-1f1f06c0b3c8.png)
+
+5. Following Step-4.Configuring .env file with credentials.
+   ![env](https://user-images.githubusercontent.com/78033774/208383086-36529838-b265-4cd7-945a-8cce1f300c24.png)
+   
 6. Following Step-5.Plublishing "shrjopayConfig.php" with below command.After publishing, it will be added under config folder.
-   Publish config
-7. Following Step-6.
-   controller trans. class
+  
+   ![vendorPublish](https://user-images.githubusercontent.com/78033774/208383348-75645cd1-b4bf-4159-98a6-1e73e54464b6.png)
+   
+   Some optional commands :
+   ![dump](https://user-images.githubusercontent.com/78033774/208383629-6636f2ff-fa14-4479-8be9-f0609f29774b.png)
+   ![clearCache](https://user-images.githubusercontent.com/78033774/208383760-94317b5a-21fa-4baa-bd1c-12e326284725.png)
+
+7. Following Step-6. Cntroller trans. class
+   ![controller](https://user-images.githubusercontent.com/78033774/208383848-9ec869ad-473d-4805-954f-887998a6b21f.png)
+
 8. Route
-9. View
+![routes](https://user-images.githubusercontent.com/78033774/208384072-38683b45-1f87-48ef-a091-3f3bdc1b2002.png)
+9.
+ View
+![blade](https://user-images.githubusercontent.com/78033774/208384171-4b379998-5130-4799-8794-c9f92b216172.png)
 10. Following Step-7.
 serve
+![serve](https://user-images.githubusercontent.com/78033774/208384292-b6736c75-9a4a-42c0-8d08-50bc7e2f8c38.png)
+
