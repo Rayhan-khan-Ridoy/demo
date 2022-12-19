@@ -188,9 +188,6 @@ Now application is ready to work. Just give another command in terminal
   php artisan serve
 ``
 
-### Who do I talk to? ###
-	For any technical assistance please contact to: https://shurjopay.com.bd/#contacts
-
 # <span style="color:green;"> <i>How any user can integrate "shurjoPay" payment package ? For better understanding to users by following above steps. A sample shurjopay integration is given below for integration our package , easily : </i></span>
 
 i) <h2 style="color:#8934eb;"> <i>First, I am going to create a laravel project to integrate shurjopay payment package named as "ShurjopayIntegration" </i></h2>
@@ -243,11 +240,12 @@ vi) <h2 style="color:#8934eb;"> <i> Following, Step-5. Plublishing "shrjopayConf
    ![vendorPublish](https://user-images.githubusercontent.com/78033774/208383348-75645cd1-b4bf-4159-98a6-1e73e54464b6.png)
    <br>
    
-   Checking /config folder for making sure about Is "shrjopayConfig.php" added or not ?  :
+   Checking /config folder for making sure about Is "shrjopayConfig.php" added or not   :-
    <br>
    ![config](https://user-images.githubusercontent.com/78033774/208407401-88a45685-c1a5-400c-8d79-0e6a9aada900.png)
    <br>
     Ok. "shrjopayConfig.php" file is found under /config folder.
+   <br>
    Next, using some optional commands :
    <br>
    <br>
@@ -286,4 +284,5 @@ x)<h2 style="color:#8934eb;"> <i> Blade file looks like below :-  </i></h2>
    ![image](https://user-images.githubusercontent.com/78033774/208404560-a9fbac89-b34e-4357-8213-ba65cfef79bf.png)
 
 
-
+### Who do I talk to? ###
+	For any technical assistance please contact to: https://shurjopay.com.bd/#contacts
