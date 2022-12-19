@@ -241,6 +241,8 @@ vi) <h2 style="color:#8934eb;"> <i> Following, Step-5. Plublishing "shrjopayConf
    Example:-
 
    ![vendorPublish](https://user-images.githubusercontent.com/78033774/208383348-75645cd1-b4bf-4159-98a6-1e73e54464b6.png)
+
+   Checking /config folder for making sure about Is "shrjopayConfig.php" added or not?  :
    
    Some optional commands :
    <br>
