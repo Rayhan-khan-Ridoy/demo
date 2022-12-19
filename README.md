@@ -198,11 +198,13 @@ i) <h2 style="color:#8934eb;"> <i>First, I am going to create a laravel project 
    ``composer create-project laravel/laravel ShurjopayIntegration
    ``
    <br>
+   <br>
    Example:-
    
    ![createProject](https://user-images.githubusercontent.com/78033774/208382663-a6eb643b-ffe8-4562-8d94-cb531e9a677f.png)
 
 ii) <h2 style="color:#8934eb;"> <i>Following, Step-1. Now, Going to change "ShurjopayIntegration" project's composer.json. </i></h2>
+   <br>
    <br>
    Example:-
 
@@ -212,6 +214,7 @@ iii) <h2 style="color:#8934eb;"> <i>Following, Step-2. Going to termial for givi
 
    ``composer update
    ``
+   <br>
    <br>
    Example:-
 
@@ -223,11 +226,13 @@ iv) <h2 style="color:#8934eb;"> <i> Following, Step-3. Adding service provider i
    Shurjomukhi\ShurjopayLaravelPlugin\ShurjopayServiceProvider::class,
    ``
    <br>
+   <br>
    Example:-
 
    ![appPhp](https://user-images.githubusercontent.com/78033774/208382945-8fe45cf1-7cc0-4dc8-8af9-1f1f06c0b3c8.png)
 
 v) <h2 style="color:#8934eb;"> <i> Following, Step-4. Configuring .env file with credentials.</i></h2>
+   <br>
    <br>
    Example:-
 
@@ -235,15 +240,18 @@ v) <h2 style="color:#8934eb;"> <i> Following, Step-4. Configuring .env file with
    
 vi) <h2 style="color:#8934eb;"> <i> Following, Step-5. Plublishing "shrjopayConfig.php" with below command. After publishing, it will be added under config folder. </i></h2>
    <br>
+   <br>
    Example:-
 
    ![vendorPublish](https://user-images.githubusercontent.com/78033774/208383348-75645cd1-b4bf-4159-98a6-1e73e54464b6.png)
    
    Some optional commands :
    <br>
+   <br>
    Example:-
 
    ![dump](https://user-images.githubusercontent.com/78033774/208383629-6636f2ff-fa14-4479-8be9-f0609f29774b.png)
+   <br>
    <br>
    Example:-
 
@@ -251,22 +259,32 @@ vi) <h2 style="color:#8934eb;"> <i> Following, Step-5. Plublishing "shrjopayConf
 
 vii) <h2 style="color:#8934eb;"> <i> Following, Step-6. Adding "Shurjopay" controller's namespace and also "PaymentRequest" class's namespace.
    Then creating two methods [ initialPayment() & verifyPayment() ] </i></h2>
-  <br>
+   <br>
+   <br>
    Example:-
 
    ![controller](https://user-images.githubusercontent.com/78033774/208383848-9ec869ad-473d-4805-954f-887998a6b21f.png)
 
 viii) <h2 style="color:#8934eb;"> <i> Defining Routes in web.php :- </i></h2>
+   <br>
+   <br>
+   Example:-
+   
    ![routes](https://user-images.githubusercontent.com/78033774/208384072-38683b45-1f87-48ef-a091-3f3bdc1b2002.png)
 
 ix) <h2 style="color:#8934eb;"> <i> Following Step-7. Going to termial for giving below commands. </i></h2>
-
+   <br>
+   <br>
+   Example:-
+   
    ![serve](https://user-images.githubusercontent.com/78033774/208384292-b6736c75-9a4a-42c0-8d08-50bc7e2f8c38.png)
 
 x)<h2 style="color:#8934eb;"> <i> Blade file looks like below :-  </i></h2>
    <br>
+   <br>
    Example:-
 
-   ![blade](https://user-images.githubusercontent.com/78033774/208384171-4b379998-5130-4799-8794-c9f92b216172.png)
+   ![image](https://user-images.githubusercontent.com/78033774/208404560-a9fbac89-b34e-4357-8213-ba65cfef79bf.png)
+
 
 
