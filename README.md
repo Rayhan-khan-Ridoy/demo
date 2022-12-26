@@ -45,6 +45,13 @@ Open your project's "composer.json" file . Then copy below line and put it into 
 ```
 "shurjomukhi/shurjopay-laravel-plugin":"dev-dev" 
 ``` 
+Example:-
+`` "require" ``: {
+             ```
+             "shurjomukhi/shurjopay-laravel-plugin":"dev-dev"
+             ```
+             }
+
 Next , Copy below block of codes and put into "composer.json" 
 ```
 "repositories":[
@@ -60,25 +67,6 @@ Then , please copy below command line and run on your project's terminal. By run
 composer update
 ```
 
-Example:-
-
-![composer](https://user-images.githubusercontent.com/78033774/209105247-15c7d887-9d9d-484d-94d4-5ab747440d4e.png)
-<br>
-![comUpdate](https://user-images.githubusercontent.com/78033774/208382865-7eab0455-b5f5-433c-824b-ee5227eb1c41.png)
-
-<!-- `` "require": {
-              "shurjomukhi/shurjopay-laravel-plugin":"dev-dev"
-             }
-``
-
-`` "repositories":[
-                   {
-                     "type": "vcs",
-                     "url": "https://github.com/shurjopay-plugins/sp-plugin-laravel.git"
-                   }
-                  ]
-`` -->
-
 #### Step-2: Add ``ShurjopayServiceProvider``.
  
 Kindly go to your project and open the ``config`` folder and then click on ``app.php`` file. Append the following line into ``providers`` array.
@@ -86,12 +74,6 @@ Kindly go to your project and open the ``config`` folder and then click on ``app
 ```
 Shurjomukhi\ShurjopayLaravelPlugin\ShurjopayServiceProvider::class,
 ```
-Example:-
-<br>
-
-![appPhp](https://user-images.githubusercontent.com/78033774/209132391-211a4a57-b669-47f0-b686-216af652ce2a.png)
-
-<br>
 
 #### After , adding above line in ``app.php`` , Please run below commands to trigger composer and ignore cache issues.
 
@@ -99,16 +81,6 @@ Example:-
 composer dump-autoload
 php artisan optimize:clear
 ```
-Example:-
-<br>
-
-![dump](https://user-images.githubusercontent.com/78033774/208383629-6636f2ff-fa14-4479-8be9-f0609f29774b.png)
-<br>
-
-![clearCache](https://user-images.githubusercontent.com/78033774/208383760-94317b5a-21fa-4baa-bd1c-12e326284725.png)
-
-
-
 #### Step-3: Configuration set-up for ``.env``. 
 Add the following credentials in ``.env`` file with provided credentials  from shurjoMukhi Limited. If there are no existing of ``.env`` file , kindly add that file and then setup below configurations into your ``.env`` file.
 ```
@@ -118,64 +90,39 @@ MERCHANT_RETURN_URL="https://sandbox.shurjopayment.com/response"
 MERCHANT_CANCEL_URL="https://sandbox.shurjopayment.com/response"
 ENGINE_URL="https://sandbox.shurjopayment.com"
 ```
-
-Example:-
-<br>
-
-![env](https://user-images.githubusercontent.com/78033774/209131559-329e2e21-0871-40f6-b1d7-6a3db35cabfe.png)
 #### Step-4: Add ``ShurjopayConfig.php`` by running below command.
 Then, Please run below commands which will give a ``ShujopayConfig.php`` file under your ``config`` folder. Our package will take necessary ``.env`` credentials from provided ``ShurjopayConfig.php`` file. So, load will be decresed for your application with ``.env`` file and application will be run faster.
 
 ```
 php artisan vendor:publish --tag=shurjopay
 ```
-<br>
-
-Example:-
-
-
-![vendorPublish](https://user-images.githubusercontent.com/78033774/208383348-75645cd1-b4bf-4159-98a6-1e73e54464b6.png)
-
 ``ShujopayConfig.php`` file adds under your ``config`` folder after running above command.
 
-![config](https://user-images.githubusercontent.com/78033774/208407401-88a45685-c1a5-400c-8d79-0e6a9aada900.png)
-  
 #### Step-5: Controller configuration.
  Now, your application is ready to integrate shurjoPay package. Add this line of code in your method where you want to call shurjoPay Payment Gateway.
 
 Add below lines in your controller :-
-
-
 ```
 use Shurjomukhi\ShurjopayLaravelPlugin\Http\Controllers\Shurjopay;
 use Shurjomukhi\ShurjopayLaravelPlugin\Http\Controllers\TransactionClasses\PaymentRequest;
 ```
-
 First make sure you are sending an array (must be an instance of "PaymentRequest" class). Which belongs below fields for making payment request by your method -
-
 ```
 'currency','amount','order_id','discount_amount','disc_percent','client_ip','customer_name','customer_phone','customer_email','customer_address','customer_city','customer_state','customer_postcode','customer_country','shipping_address','shipping_city','shipping_country','received_person_name','shipping_phone_number'
 ```
-
-
 #### Then in your payment method you need to add below lines :-
-
 ```
 $request = new PaymentRequest($requestArray);
 $shurjopay_service = new Shurjopay();
 return $shurjopay_service->makePayment($request);
 ```
-
 #### For verifying order :-
-
 ```
 $shurjopay_instance = new Shurjopay();
 return $shurjopay_instance->verifyPayment($order_id);
 ```
-
 #### Step-6: Ready to run.
 Now application is ready to work. Just give another command in terminal
-
 ```
 php artisan serve
 ```
