@@ -118,7 +118,7 @@ return $shurjopay_service->makePayment($request);
 $shurjopay_instance = new Shurjopay();
 return $shurjopay_instance->verifyPayment($order_id);
 ```
-[Sample]([https://shurjopay.com.bd/#contacts](https://github.com/shurjopay-plugins/sp-plugin-usage-examples/blob/dev/laravel-app-laravel-plugin/shurjopay_integ_usage_project_new/app/Http/Controllers/shurjopayIntigretionController.php) controller for integrating ``shurjopay`` is here.
+[Sample](https://github.com/shurjopay-plugins/sp-plugin-usage-examples/blob/dev/laravel-app-laravel-plugin/shurjopay_integ_usage_project_new/app/Http/Controllers/shurjopayIntigretionController.php) controller for integrating ``shurjopay`` is here.
 #### Step-6: Ready to run.
 Now application is ready to work. Just give another command in terminal
 ```
