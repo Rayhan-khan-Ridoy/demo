@@ -59,7 +59,7 @@ Next , copy below block of codes and put into "composer.json"
                      "type": "vcs",
                      "url": "https://github.com/shurjopay-plugins/sp-plugin-laravel.git"
                    }
-                  ]
+               ]
 ```
 Then , please copy below command line and run on your project's terminal. By running this command , our ``shurjoPay`` package will be loaded into your project. 
 
