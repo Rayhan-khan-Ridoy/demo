@@ -89,7 +89,7 @@ MERCHANT_RETURN_URL="https://sandbox.shurjopayment.com/response"
 MERCHANT_CANCEL_URL="https://sandbox.shurjopayment.com/response"
 ENGINE_URL="https://sandbox.shurjopayment.com"
 ```
-#### Step-4: Add ``ShurjopayConfig.php`` by running below command.
+#### Step-4: Get the ``ShurjopayConfig.php`` by running below command.
 Then, Please run below commands which will give a ``ShujopayConfig.php`` file under your ``config`` folder. Our package will take necessary ``.env`` credentials from provided ``ShurjopayConfig.php`` file. So, load will be decresed for your application with ``.env`` file and application will be run faster.
 ```
 php artisan vendor:publish --tag=shurjopay
@@ -98,7 +98,6 @@ php artisan vendor:publish --tag=shurjopay
 
 #### Step-5: Controller configuration.
 Now, your application is ready to integrate shurjoPay package. Add this line of code in your method where you want to call shurjoPay Payment Gateway.
-
 Add below lines in your controller :-
 ```
 use Shurjomukhi\ShurjopayLaravelPlugin\Http\Controllers\Shurjopay;
