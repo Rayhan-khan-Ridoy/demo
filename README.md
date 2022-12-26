@@ -40,19 +40,19 @@ This document is intended for the developers and technical personnel of merchant
 To integrate the shurjoPay Payment Gateway in your JavaScript project do the following tasks sequentially.
 
 #### Step-1: Install the package inside your project environment.
-Open your project's "composer.json" file . Then copy below line and put it into the body of require block.
+Open your project's "composer.json" file . Then copy below line and put it into the body of ``require`` block.
 
 ```
 "shurjomukhi/shurjopay-laravel-plugin":"dev-dev" 
 ``` 
 Example:-
-`` "require" ``: {
+``"require"``: {
              ```
              "shurjomukhi/shurjopay-laravel-plugin":"dev-dev"
              ```
              }
 
-Next , Copy below block of codes and put into "composer.json" 
+Next , copy below block of codes and put into "composer.json" 
 ```
 "repositories":[
                    {
@@ -76,7 +76,6 @@ Shurjomukhi\ShurjopayLaravelPlugin\ShurjopayServiceProvider::class,
 ```
 
 #### After , adding above line in ``app.php`` , Please run below commands to trigger composer and ignore cache issues.
-
 ```
 composer dump-autoload
 php artisan optimize:clear
@@ -92,14 +91,13 @@ ENGINE_URL="https://sandbox.shurjopayment.com"
 ```
 #### Step-4: Add ``ShurjopayConfig.php`` by running below command.
 Then, Please run below commands which will give a ``ShujopayConfig.php`` file under your ``config`` folder. Our package will take necessary ``.env`` credentials from provided ``ShurjopayConfig.php`` file. So, load will be decresed for your application with ``.env`` file and application will be run faster.
-
 ```
 php artisan vendor:publish --tag=shurjopay
 ```
 ``ShujopayConfig.php`` file adds under your ``config`` folder after running above command.
 
 #### Step-5: Controller configuration.
- Now, your application is ready to integrate shurjoPay package. Add this line of code in your method where you want to call shurjoPay Payment Gateway.
+Now, your application is ready to integrate shurjoPay package. Add this line of code in your method where you want to call shurjoPay Payment Gateway.
 
 Add below lines in your controller :-
 ```
@@ -129,6 +127,6 @@ php artisan serve
 #### License
 This code is under the [MIT open source License](http://www.opensource.org/licenses/mit-license.php).
 #### Sample Integration
- Please see our [sample integration](https://github.com/shurjopay-plugins/sp-plugin-usage-examples/tree/dev/laravel-app-laravel-plugin/shurjopay_integ_usage_project_new) project which will give you some idea and help you to integrate our package !
+Please see our [sample integration](https://github.com/shurjopay-plugins/sp-plugin-usage-examples/tree/dev/laravel-app-laravel-plugin/shurjopay_integ_usage_project_new) project which will give you some idea and help you to integrate our package !
 #### Who do I talk to? 
 For any technical assistance please [contact](https://shurjopay.com.bd/#contacts) now.
