@@ -151,7 +151,7 @@ use Shurjomukhi\ShurjopayLaravelPlugin\Http\Controllers\Shurjopay;
 use Shurjomukhi\ShurjopayLaravelPlugin\Http\Controllers\TransactionClasses\PaymentRequest;
 ```
 
- First make sure you are doing http post request [Illuminate\Http\Request] or sending an array (must be an instance of "PaymentRequest" class)  for making payment request into your method with values of below fields -
+First make sure you are sending an array (must be an instance of "PaymentRequest" class). Which belongs below fields for making payment request by your method -
 
 ```
 'currency','amount','order_id','discount_amount','disc_percent','client_ip','customer_name','customer_phone','customer_email','customer_address','customer_city','customer_state','customer_postcode','customer_country','shipping_address','shipping_city','shipping_country','received_person_name','shipping_phone_number'
