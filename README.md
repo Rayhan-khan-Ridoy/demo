@@ -113,7 +113,7 @@ $request = new PaymentRequest($requestArray);
 $shurjopay_service = new Shurjopay();
 return $shurjopay_service->makePayment($request);
 ```
-#### For verifying order :-
+#### Payment verification can be done after each transaction with shurjopay order_id :-
 ```
 $shurjopay_instance = new Shurjopay();
 return $shurjopay_instance->verifyPayment($order_id);
